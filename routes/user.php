@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Frontend\Auth\RegisterController;
 use App\Http\Controllers\Frontend\Auth\LoginController;
 use App\Http\Controllers\Frontend\DashboardController;
-use App\Http\Controllers\Frontend\Modules\Page1Controller;
+use App\Http\Controllers\Frontend\Modules\Page1\Page1Controller;
 
 Route::get('user/register', [RegisterController::class, 'index'])->name('user.register'); 
 Route::post('user/register', [RegisterController::class, 'store'])->name('user.register.post'); 

@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\Auth\RegisterController;
 use App\Http\Controllers\Admin\Auth\LoginController;
 use App\Http\Controllers\Admin\DashboardController;
-use App\Http\Controllers\Admin\Modules\Page1Controller;
+use App\Http\Controllers\Admin\Modules\Page1\Page1Controller;
 
 Route::get('register', [RegisterController::class, 'index'])->name('admin.register'); 
 Route::post('register', [RegisterController::class, 'store'])->name('admin.register.post'); 
